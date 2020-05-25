@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="102dp"
+        android:layout_height="46dp"
+        android:text="输入信息"
+        android:textAlignment="textEnd"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="温度（℃）：" />
+
+    <EditText
+        android:id="@+id/Tem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="25.6"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:maxLength="4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湿度（%）："
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/Hum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="65"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:maxLength="4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PM2.5："
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/Pm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="33"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:maxLength="4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="51dp"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/btsure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="53dp"
+            android:text="确定" />
+
+    </RelativeLayout>
+</LinearLayout>
